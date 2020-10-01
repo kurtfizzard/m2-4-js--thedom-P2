@@ -6,7 +6,7 @@ test("Exercise 5", () => {
   expect(addNumbers(1, 2, 3, 4, 5)).toBe(55);
   expect(addNumbers(1, 2, 3, 4, 5, 6)).toBe(91);
   expect(addNumbers(1, 2, 3, 4, "Hello")).toBe(30);
-  // expect(addNumbers()).toBe(undefined);
+  expect(addNumbers()).toBe(undefined);
   // add more tests here...
 });
 

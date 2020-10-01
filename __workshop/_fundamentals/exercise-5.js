@@ -11,7 +11,7 @@ const addNumbers = (...nums) => {
   // create a variable for the sum, equal to zero
   let sum = 0;
   // if no arguments are passed, return undefined
-  if (!nums) {
+  if (nums.length === 0) {
     return undefined;
   }
   // loop over the given numbers carry out a function on each
