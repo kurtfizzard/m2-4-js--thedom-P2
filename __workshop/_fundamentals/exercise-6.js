@@ -12,9 +12,21 @@
 // JAVASCRIPT -> No
 
 function isPalindrome(theString) {
-  // Your code here
+  // if the argument is a string, carry out the following function
+  if (typeof theString === "string") {
+    // create a new variable or the reversed string
+    //it is equal to the original string that is split into an array, reversed in order and joined back into a string
+    let reversedString = theString.split("").reverse().join("");
+    // if theString is equal to reversedString return true
+    if (theString === reversedString) {
+      return true;
+      // if not, return false
+    } else {
+      return false;
+    }
+    // if the argument is not a string, it will return undefined by default
+  }
 }
-
 // Part 2 - Test
 // --------------
 // Test your function.

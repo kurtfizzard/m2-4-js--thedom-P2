@@ -8,9 +8,24 @@
 // - If no arguments are passed, return `undefined`
 
 const addNumbers = (...nums) => {
-  // Insert missing solution please
+  // create a variable for the sum, equal to zero
+  let sum = 0;
+  // if no arguments are passed, return undefined
+  if (!nums) {
+    return undefined;
+  }
+  // loop over the given numbers carry out a function on each
+  nums.forEach((element) => {
+    // if the element is a number, add the square of that number to the sum
+    if (typeof element === "number") {
+      sum += element * element;
+      // it is implied that if the element is not a number, it will be skipped
+    } else {
+      return;
+    }
+  });
+  return sum;
 };
-
 // Part 2 - Test
 // --------------
 // Test your function.

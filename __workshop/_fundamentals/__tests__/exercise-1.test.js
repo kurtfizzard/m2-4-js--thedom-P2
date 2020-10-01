@@ -10,6 +10,11 @@ test("Exercise 1", () => {
     "4",
     "5",
   ]);
+  expect(convertToString(["string"])).toStrictEqual(["string"]);
+  expect(convertToString([true])).toStrictEqual(["true"]);
+  expect(convertToString([{ name: "Gordon", age: 59 }])).toStrictEqual([
+    "[object Object]",
+  ]);
   // add more tests here...
 });
 

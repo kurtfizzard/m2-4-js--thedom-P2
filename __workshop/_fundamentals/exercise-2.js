@@ -2,14 +2,23 @@
 //
 // Part 1 - Write
 // ---------------
-// Write a function accepts an array of values and returns a new array of values with all of the strings replaced with the word "redacted" (each value is replaced by the word 'redacted').
+// Write a function that accepts an array of values and returns a new array of values with all of the strings replaced with the word "redacted" (each value is replaced by the word 'redacted').
 // Do not redact values that are not strings.
 //
 // e.g. redacted(["bacon", false, 42]) returns [ 'redacted', false, 42 ]
 //
 
 const redacted = (arr) => {
-  // Insert missing solution please
+  // return a new array made up of elements from the original
+  // loop over the original array and if an element is a string, it instead returns "redacted"
+  return arr.map((element) => {
+    if (typeof element === "string") {
+      return "redacted";
+      // if the element is not a string it returns the original element, unaltered
+    } else {
+      return element;
+    }
+  });
 };
 
 // Part 2 - Test

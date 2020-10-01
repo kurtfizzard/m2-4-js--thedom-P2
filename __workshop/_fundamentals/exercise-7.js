@@ -13,8 +13,14 @@
 
 // - If the provided key is not any of the objects, return null for that value;
 
+// something is wrong here - no key provided
+
 const addValues = (arr, obj) => {
-  // Insert missing solution please
+  return arr.map((element) => {
+    if (typeof obj === "object") {
+      return { ...element, ...obj };
+    }
+  });
 };
 
 // Part 2 - Test

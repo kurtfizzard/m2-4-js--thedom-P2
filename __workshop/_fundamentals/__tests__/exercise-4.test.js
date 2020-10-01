@@ -12,6 +12,42 @@ test("Exercise 4", () => {
       "amount"
     )
   ).toBe(145);
+});
+
+test("Exercise 4", () => {
+  expect(
+    count(
+      [
+        { name: "Bob", amount: 100 },
+        { name: "Josie", yearsOld: 45 },
+      ],
+      "amount"
+    )
+  ).toBe(100);
+});
+
+test("Exercise 4", () => {
+  expect(
+    count(
+      [
+        { name: "Bob", yearsOld: 10 },
+        { name: "Josie", yearsOld: 9 },
+      ],
+      "yearsOld"
+    )
+  ).toBe(19);
+});
+
+test("Exercise 4", () => {
+  expect(
+    count(
+      [
+        { name: "Bob", amount: 100 },
+        { name: "Josie", yearsOld: 45 },
+      ],
+      "toes"
+    )
+  ).toBe(0);
   // add more tests here...
 });
 

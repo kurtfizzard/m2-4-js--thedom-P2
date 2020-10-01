@@ -27,7 +27,19 @@
 // solution comes more quickly :)
 
 const uniqueElements = (arr1, arr2) => {
-  // Your code here
+newArray = [];
+
+if (arr1[x] === arr2[x])
+
+return arr1.map((num) {
+  if (num += num) {
+
+  }
+})
+
+  if (arr1 !== "array" || arr2 !== "array") {
+    return undefined;
+  }
 };
 
 // Part 2 - Test

@@ -10,6 +10,15 @@ test("Exercise 9", () => {
   ).toBe(
     "Lorem Ipsum is simply dummy text of the \nprinting and typesetting industry. Lorem\nIpsum has been the industry's standard \ndummy text ever since the 1500s, when an\nunknown printer took a galley of type a\nnd scrambled it to make a type specimen \nbook."
   );
+  expect(wrapAfter40Chars("This is going to be forty one characters.")).toBe(
+    "This is going to be forty one characters\n."
+  );
+  expect(wrapAfter40Chars("This is too few characters.")).toBe(
+    "This is too few characters."
+  );
+  expect(wrapAfter40Chars("This is going to be over forty characters.")).toBe(
+    "This is going to be over forty character\ns."
+  );
   // add more tests here...
 });
 

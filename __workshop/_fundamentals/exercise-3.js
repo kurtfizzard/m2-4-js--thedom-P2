@@ -15,7 +15,17 @@
 // - If the second parameter is not an object, return the original array element
 
 const insert = (arr, obj) => {
-  // Insert missing solution please
+  // return a new array made up of elements from the original
+  // if the second argument passed to the function is an object return a new array of objects
+  // with the given objet added to each element of the array
+  return arr.map((element) => {
+    if (typeof obj === "object") {
+      return { ...element, ...obj };
+    } else {
+      // if the second argument is not an object, return the original element
+      return element;
+    }
+  });
 };
 
 // Part 2 - Test

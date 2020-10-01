@@ -6,7 +6,9 @@
 //
 
 const convertToString = (arr) => {
-  // Insert missing solution please
+  // return a new array made up of elements from the original
+  // with the to.String function carried out on each element
+  return arr.map((element) => element.toString());
 };
 
 // Part 2 - Test
